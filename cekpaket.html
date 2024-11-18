@@ -24,14 +24,13 @@
             font-weight: bold; /* Membuat tulisan bold */
             position: relative;
             text-align: center;
+            display: flex;
+            justify-content: center; /* Memastikan logo berada di tengah secara horizontal */
+            align-items: center; /* Memastikan logo berada di tengah secara vertikal */
         }
 
         /* Logo styling */
         header .logo {
-            position: absolute;
-            left: 20px; /* Memberikan jarak dari kiri */
-            top: 50%; /* Memposisikan logo di tengah vertikal header */
-            transform: translateY(-50%); /* Menyelaraskan logo secara vertikal */
             width: 150px; /* Ukuran logo lebih kecil */
             height: auto; /* Menjaga proporsi logo */
         }
