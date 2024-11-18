@@ -70,7 +70,7 @@
         /* Navbar */
         .navbar {
             display: flex;
-            justify-content: flex-start; /* Menempatkan logo di pojok kiri */
+            justify-content: center; /* Menempatkan logo di tengah */
             align-items: center;
             padding: 10px 20px;
             background-color: #000000; /* Warna navbar hitam */
@@ -116,7 +116,7 @@
 </head>
 
 <body>
-    <!-- Navbar dengan logo Nusalaut di pojok kiri -->
+    <!-- Navbar dengan logo Nusalaut di tengah -->
     <div class="navbar">
         <!-- Menambahkan logo nusalaut.png -->
         <img src="nusalaut.png" alt="Logo Nusalaut" class="logo" />
@@ -124,12 +124,12 @@
 
     <!-- Formulir untuk Input Nama dan Nomor Telepon -->
     <div class="form-container">
-        <h2>Masukkan Nama dan Nomor Telepon Untuk Mendapatkan Alamat!</h2>
+        <h2>Masukkan Nama dan Nomor Wa Untuk Mendapatkan Alamat!</h2>
         <form id="formAlamat" onsubmit="return saveData()">
             <label for="nama">Nama Lengkap</label>
             <input type="text" id="nama" required>
 
-            <label for="telepon">Nomor Telepon</label>
+            <label for="telepon">Nomor Wa</label>
             <input type="tel" id="telepon" required>
 
             <button type="submit">Simpan dan Lihat Alamat</button>
