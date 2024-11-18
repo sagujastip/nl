@@ -9,119 +9,112 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff; /* Mengubah latar belakang halaman menjadi putih */
-            color: #000; /* Mengubah warna teks menjadi hitam agar kontras dengan latar belakang putih */
+            background-color: #fff; /* Background putih */
+            color: #000; /* Warna teks hitam */
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Agar tinggi halaman minimal memenuhi layar */
+            align-items: center; /* Konten di tengah horizontal */
+            min-height: 100vh; /* Minimal tinggi layar penuh */
         }
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between; /* Membuat elemen navbar tersebar antara kiri dan kanan */
-            align-items: center; /* Vertikal center untuk logo dan teks */
-            padding: 10px 20px;
-            background-color: #000; /* Mengubah latar belakang navbar menjadi hitam */
-        }
-
-        .navbar a {
-            color: #fff; /* Mengubah warna teks navbar menjadi putih */
-            margin: 0 4px;
-            text-decoration: none;
-            font-size: 14px; /* Ukuran font lebih kecil */
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
+        /* Logo */
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
         }
 
         .logo {
-            width: 150px; /* Ukuran logo lebih besar */
-            height: auto; /* Menjaga rasio gambar */
+            width: 150px;
+            height: auto;
         }
 
-        /* Content */
+        /* Link navigasi di bawah logo */
+        .nav-links {
+            margin-top: 15px;
+        }
+
+        .nav-links a {
+            color: #000; /* Warna teks hitam */
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Konten utama */
         .content {
             text-align: center;
+            flex: 1; /* Membuat konten mengisi ruang vertikal */
             padding: 20px;
-            flex: 1; /* Menggunakan flex untuk membuat konten mengisi ruang yang tersedia */
         }
 
         .content h1 {
-            font-size: 24px; /* Ukuran font lebih kecil untuk h1 */
-            color: #000; /* Mengubah warna teks h1 menjadi hitam */
-            margin-bottom: 5px; /* Mengurangi jarak bawah pada h1 */
+            font-size: 24px;
+            color: #000;
         }
 
         .content h1 span {
-            color: #8f5bbd; /* Mengubah warna sebagian teks h1 menjadi warna ungu */
+            color: #8f5bbd; /* Warna ungu */
         }
 
         .tagline {
-            color: #000; /* Mengubah warna teks tagline menjadi hitam */
-            padding: 5px 10px;
-            display: inline-block;
-            margin-top: 0; /* Mengurangi margin atas pada tagline */
-            margin-bottom: 10px; /* Menambahkan sedikit jarak bawah untuk pemisahan */
-            font-size: 14px; /* Ukuran font lebih kecil untuk tagline */
+            font-size: 14px;
+            margin-top: 10px;
+            color: #000;
         }
 
-        /* Image Container */
+        /* Image slider */
         .image-container {
             position: relative;
-            width: 100%; /* Menjamin lebar container mengikuti ukuran layar */
-            overflow-x: scroll; /* Menambahkan scroll horizontal */
-            display: flex; /* Flexbox untuk menampilkan gambar berurutan */
-            scroll-snap-type: x mandatory; /* Memaksa scroll berhenti pada setiap gambar */
-            -webkit-overflow-scrolling: touch; /* Memberikan scroll yang halus di perangkat mobile */
+            width: 100%;
+            overflow-x: auto;
+            display: flex;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
         }
 
         .image-container img {
-            width: 100vw; /* Setiap gambar mengambil 100% lebar layar */
-            height: auto; /* Menjaga rasio gambar agar tidak terdistorsi */
-            object-fit: cover; /* Memastikan gambar menutupi area tanpa terdistorsi */
-            scroll-snap-align: start; /* Memastikan setiap gambar berhenti pada awal ketika digeser */
+            width: 100vw;
+            height: auto;
+            object-fit: cover;
+            scroll-snap-align: start;
         }
 
         /* Footer */
         footer {
-            background-color: #000; /* Mengubah latar belakang footer menjadi hitam */
-            color: #fff; /* Teks footer menjadi putih */
+            background-color: #000;
+            color: #fff;
             text-align: center;
             padding: 10px 0;
-            font-size: 12px; /* Ukuran font lebih kecil untuk footer */
-            margin-top: auto; /* Agar footer berada di bawah konten */
+            font-size: 12px;
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar with Logo -->
-    <div class="navbar">
-        <!-- Logo berada di kiri -->
+    <!-- Logo dan Link -->
+    <div class="logo-container">
         <img src="nusalaut.png" alt="Logo Nusa Ina" class="logo">
-        
-        <!-- Menu items (pindah ke kanan) -->
-        <div>
+        <div class="nav-links">
             <a href="https://wa.me/6281244801294" target="_blank">Chat Admin</a>
             <a href="Daftaralamat.html">Alamat Jastip</a>
             <a href="cekpaket.html">Cek Paket</a>
         </div>
     </div>
 
-    <!-- Content -->
+    <!-- Konten Utama -->
     <div class="content">
         <h1>Selamat datang di <span>NusaIna</span>!</h1>
         <div class="tagline">"Titipan Aman, No Drama! Ya Di #NusaIna"</div>
 
-        <!-- Image Container with Horizontal Scroll -->
+        <!-- Slider Gambar -->
         <div class="image-container">
-            <!-- Gambar pertama -->
             <img src="nusasatu.jpg" alt="Kota Ternate">
-            <!-- Gambar kedua -->
             <img src="nusadua.jpg" alt="Bacan">
-            <!-- Gambar ketiga -->
             <img src="nusatiga.jpg" alt="Obi">
         </div>
     </div>
