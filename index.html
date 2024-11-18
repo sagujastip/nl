@@ -13,8 +13,22 @@
             color: #000; /* Warna teks hitam */
             display: flex;
             flex-direction: column;
-            align-items: center; /* Konten di tengah horizontal */
-            min-height: 100vh; /* Minimal tinggi layar penuh */
+            align-items: center;
+            min-height: 100vh; /* Tinggi minimal penuh layar */
+        }
+
+        /* Header */
+        .header {
+            background-color: #000; /* Warna hitam untuk full headset atas */
+            color: #fff; /* Warna teks putih */
+            width: 100%;
+            padding: 20px 0; /* Padding untuk tinggi headset */
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
         }
 
         /* Logo */
@@ -85,16 +99,25 @@
 
         /* Footer */
         footer {
-            background-color: #000;
-            color: #fff;
+            background-color: #000; /* Warna hitam untuk full headset bawah */
+            color: #fff; /* Teks footer menjadi putih */
+            width: 100%;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0; /* Padding untuk tinggi headset */
+        }
+
+        footer p {
+            margin: 0;
             font-size: 12px;
-            margin-top: auto;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Selamat Datang di NusaIna</h1>
+    </div>
 
     <!-- Logo dan Link -->
     <div class="logo-container">
@@ -121,7 +144,7 @@
 
     <!-- Footer -->
     <footer>
-        © 2024 Nusalaut By. Dhani Mochtar
+        <p>© 2024 Nusalaut By. Dhani Mochtar</p>
     </footer>
 
 </body>
